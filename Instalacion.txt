@@ -3,3 +3,66 @@ Paso 1: Obtener el Repositorio
 git clone https://github.com/Velasquezsam/Proyecto_IA.git
 cd Proyecto_IA  
 
+Paso 2: Crear y Activar un Entorno Virtual
+Para evitar conflictos de versiones con librerías del sistema, 
+es necesario aislar las dependencias creando un entorno virtual (venv). 
+Abra su terminal en la raíz del proyecto y ejecute:
+
+# Crear el entorno virtual llamado "venv"
+python -m venv venv
+
+# Activar el entorno virtual en Windows (PowerShell/CMD):
+venv\Scripts\activate
+
+# Activar el entorno virtual en macOS o Linux:
+source venv/bin/activate
+
+(Nota: El entorno estará activo cuando el prefijo (venv) 
+aparezca al inicio de la línea de comandos en su terminal).
+
+Paso 4: Instalar las Dependencias
+Con el entorno virtual activado, instale las librerías exactas requeridas para el proyecto
+ ejecutando el siguiente comando. 
+Esto instalará versiones específicas para asegurar compatibilidad:
+
+pip install -r requirements.txt
+
+
+Paso 5: Levantar el Servidor Web
+Una vez que las dependencias y el modelo estén en su lugar, 
+inicie la aplicación Flask: 
+
+python app.py
+
+Paso 6: Probar la API REST
+
+Configure la petición de la siguiente manera:
+
+Método: POST
+
+URL: http://127.0.0.1:5000/predict
+
+Body (raw -> JSON): Utilice el diccionario JSON de prueba proporcionado 
+en este documento.
+
+Ejemplo de JSON: 
+
+{
+  "Administrative": 2,
+  "Administrative_Duration": 50.5,
+  "Informational": 0,
+  "Informational_Duration": 0.0,
+  "ProductRelated": 15,
+  "ProductRelated_Duration": 350.2,
+  "BounceRates": 0.01,
+  "ExitRates": 0.02,
+  "PageValues": 25.5,
+  "SpecialDay": 0.0,
+  "Month": "May",
+  "OperatingSystems": 2,
+  "Browser": 2,
+  "Region": 1,
+  "TrafficType": 3,
+  "VisitorType": "Returning_Visitor",
+  "Weekend": false
+}
