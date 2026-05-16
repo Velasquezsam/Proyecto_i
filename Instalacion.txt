@@ -1,7 +1,7 @@
 Paso 1: Obtener el Repositorio
 
-git clone https://github.com/Velasquezsam/Proyecto_IA.git
-cd Proyecto_IA  
+git clone https://github.com/Velasquezsam/Proyecto_i.git
+cd Proyecto_i 
 
 Paso 2: Crear y Activar un Entorno Virtual
 Para evitar conflictos de versiones con librerías del sistema, 
