@@ -1,0 +1,5 @@
+Paso 1: Obtener el Repositorio
+
+git clone https://github.com/Velasquezsam/Proyecto_IA.git
+cd Proyecto_IA  
+
