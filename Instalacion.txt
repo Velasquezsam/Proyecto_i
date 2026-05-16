@@ -20,7 +20,7 @@ source venv/bin/activate
 (Nota: El entorno estará activo cuando el prefijo (venv) 
 aparezca al inicio de la línea de comandos en su terminal).
 
-Paso 4: Instalar las Dependencias
+Paso 3: Instalar las Dependencias
 Con el entorno virtual activado, instale las librerías exactas requeridas para el proyecto
  ejecutando el siguiente comando. 
 Esto instalará versiones específicas para asegurar compatibilidad:
@@ -28,13 +28,13 @@ Esto instalará versiones específicas para asegurar compatibilidad:
 pip install -r requirements.txt
 
 
-Paso 5: Levantar el Servidor Web
+Paso 4: Levantar el Servidor Web
 Una vez que las dependencias y el modelo estén en su lugar, 
 inicie la aplicación Flask: 
 
 python app.py
 
-Paso 6: Probar la API REST
+Paso 5: Probar la API REST
 
 Configure la petición de la siguiente manera:
 
