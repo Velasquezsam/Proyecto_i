@@ -3,6 +3,15 @@ import joblib
 import pandas as pd
 
 app = Flask(__name__)
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        "estado": "activa",
+        "nombre": "API Shopping Indicator",
+        "endpoint_prediccion": "/predict",
+        "metodo": "POST",
+        "uso": "Enviar datos de una sesion de navegacion en formato JSON para obtener la prediccion de intencion de compra."
+    }), 200
 
 # 1. Cargar el modelo entrenado
 # Asegúrate de que el nombre coincida exactamente con tu archivo .pkl
