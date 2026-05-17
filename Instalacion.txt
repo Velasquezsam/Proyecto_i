@@ -11,6 +11,9 @@ Abra su terminal en la raíz del proyecto y ejecute:
 # Crear el entorno virtual llamado "venv"
 python -m venv venv
 
+#Dar permisos si no deja activar el entorno 
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 # Activar el entorno virtual en Windows (PowerShell/CMD):
 venv\Scripts\activate
 
@@ -25,7 +28,8 @@ Con el entorno virtual activado, instale las librerías exactas requeridas para 
  ejecutando el siguiente comando. 
 Esto instalará versiones específicas para asegurar compatibilidad:
 
-pip install -r requirements.txt
+opc 1 : pip install -r requirements.txt
+opc 2 : python -m pip install -r requirements.txt
 
 
 Paso 4: Levantar el Servidor Web
